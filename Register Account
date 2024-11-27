@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color:  rgb(249, 249, 249);
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            margin-bottom: 10px;
+            align-items: center;
+
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            width: 150px;
+            margin-right: 10px;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            flex-grow: 1;
+            padding: 8px;
+            
+            width: auto;
+        }
+        .format{
+            margin-left: 10px;
+            font-size: 12px;
+
+        }
+
+        .form-group span {
+            color: red;
+            font-size: 12px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .buttons .register {
+            background-color: grey;
+            color: white;
+        }
+
+        .buttons .clear {
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register Account</h1>
+        <form>
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" placeholder="Enter your full name">
+                <span>User name must be at least 4 characters</span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <span>Password must be at least 4 characters</span>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" placeholder="Re-enter your password">
+                <span>Passwords do not match</span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Format: john@gmail.com">
+                <span>Invalid email format</span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" placeholder="Format: XXXX-XXX-XXX">
+                <span>Invalid phone number</span>
+            </div>
+            <div class="form-group">
+                <label for="zipCode">Zip Code:</label>
+                <input type="text" id="zipCode" placeholder="Format: Use 5 or 9 digits Zip Code">
+                <span>Invalid Zip Code</span>
+            </div>
+            <div class="form-group">
+                <label for="cardType">Card Type:</label>
+                <select id="cardType">
+                    <option value="Visa">Visa</option>
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="Amex">American Express</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" placeholder="Format: 1111-2222-3333-4444">
+                <span>Invalid card number format</span>
+            </div>
+            <div class="form-group">
+                <label for="expirationDate">Expiration Date:</label>
+                <input type="date" id="expirationDate">
+                <span>Invalid date format</span>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="register">Register</button>
+                <button type="reset" class="clear">Clear Form</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
